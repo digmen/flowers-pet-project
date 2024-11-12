@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+ }
+
+
+ .container {
+     background-image: url('./assets/bg.jpg');
+     background-size: cover;
+     height: 100vh;
+ }
+
+ .app {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card {
+     margin-top: 20px;
+     width: calc(100vw - 30%);
+     height: 700px;
+     border-radius: 16px;
+     background: #f5f5dc;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .card_head {
+     padding-top: 50px;
+     padding-inline: 50px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .title {
+     font-size: 38px;
+     font-weight: lighter;
+ }
+
+ .progress_line {
+     width: 100%;
+     height: 10px;
+     border-radius: 16px;
+     background: #ffffff;
+     transition: 1s;
+ }
+
+ .progress_line_end {
+     transition: 1s;
+     height: 10px;
+     border-radius: 16px;
+     background: #393434;
+ }
+
+ .flowers {
+     padding-top: 10px;
+     padding-inline: 50px;
+     display: flex;
+     gap: 50px;
+     width: 100%;
+     flex-wrap: wrap;
+     justify-content: center;
+     transition: 1s;
+ }
+
+ .flower_card {
+     background-size: cover;
+     width: 250px;
+     height: 200px;
+ }
+
+ .flower_card_btn {
+     background-size: cover;
+     width: 250px;
+     height: 200px;
+     border-radius: 16px;
+     border: 1px solid gainsboro;
+     font-size: 24px;
+ }
+
+ .main_flowers {
+     padding-top: 20px;
+     padding-inline: 50px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .title_card {
+     font-size: 20px;
+     font-weight: lighter;
+ }
+
+ .flowers_inp {
+     width: 100%;
+     padding: 10px;
+     border: none;
+     outline: none;
+ }
+
+ .flower_inp:focus {
+     border: none;
+     outline: none;
+ }
+
+ .btn_inp {
+     border-radius: 12px;
+     border: none;
+     background-color: #393434;
+     color: white;
+     padding: 20px 40px;
+     font-size: 18px;
+ }
